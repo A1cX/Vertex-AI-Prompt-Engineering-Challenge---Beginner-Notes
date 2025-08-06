@@ -1,0 +1,86 @@
+# Vertex AI Prompt Engineering Challenge – Beginner Notes
+
+This repository documents my hands-on learning as a complete beginner to Google AI, exploring prompt engineering using **Vertex AI Workbench** and the **Gemini 1.5 Flash model**.
+---
+
+## What was doen
+
+This challenge was part of the **Google AI Prompt Engineering Techniques** training. 
+I worked through multiple practical tasks inside the Vertex AI Workbench using Python and text-based prompts.
+
+-> I can only read Python, not write in python
+for this lab it was suffiecinet the reading skill only.
+
+---
+
+## Tasks Covered
+
+### Task 1 – Prompt Clarity
+- Rewrote vague prompts to be specific and directive.
+
+### Task 2 – Personas
+- Modified a basic prompt to respond in the voice of an **energetic personal trainer**, observing how tone and vocabulary change with persona.
+
+### Task 3 – Output Formatting
+- Converted cooking ingredients into structured **YAML format** using dictionaries with `ingredient` and `quantity` keys.
+
+### Task 4 – Fallback Response
+- Built instructions that constrained the model to only answer questions about **historical landmarks**, with fallback for off-topic queries.
+
+### Task 5 – Contextual Examples
+- Guided the model to always include **bicycle-themed** tourist recommendations by editing example inputs and outputs.
+
+for all 5 tasks screenshots with the adjusted prompts were saved locally for future reference
+
+
+Model Instantiation
+
+from vertexai.language_models import ChatModel
+chat_model = ChatModel.from_pretrained("gemini-1.5-flash-preview")  # or similar
+Generating Responses with Custom Prompts
+
+Defined a function print_response(prompt) to simplify interaction
+
+Learned the importance of temperature (creativity control)
+
+Task 1: Simple Prompting
+
+Asked direct questions and explored default outputs
+
+Task 2: Personas
+
+Crafted prompts with personality (e.g., "energetic personal trainer")
+
+Observed how tone and vocabulary shift with character framing
+
+Task 3: Output Format Constraints
+
+Transformed ingredient lists into YAML dictionaries
+
+yaml
+Copy
+Edit
+- ingredient: egg whites
+  quantity: 9
+- ingredient: Cream of Tartar
+  quantity: 3/8 tsp
+Task 4: Fallback Response Logic
+
+Added rules to constrain model replies:
+
+“Sorry, I only answer questions about historical landmarks!”
+
+Task 5: Examples for Specificity
+
+Tweaked prompt examples to always include bicycles in tour recommendations
+---
+
+## Tech Stack
+
+- **Platform**: Google Vertex AI Workbench
+- **Model**: Gemini 1.5 Flash (`gemini-1.5-flash`)
+- **Language**: Python
+- **Environment**: Jupyter Notebook
+
+---
+
