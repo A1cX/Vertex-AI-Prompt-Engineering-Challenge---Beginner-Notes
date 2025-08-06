@@ -58,8 +58,7 @@ Task 3: Output Format Constraints
 Transformed ingredient lists into YAML dictionaries
 
 yaml
-Copy
-Edit
+
 - ingredient: egg whites
   quantity: 9
 - ingredient: Cream of Tartar
