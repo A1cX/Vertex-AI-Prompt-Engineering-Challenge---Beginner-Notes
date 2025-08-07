@@ -3,13 +3,13 @@
 This repository documents my hands-on learning as a complete beginner to Google AI, exploring prompt engineering using **Vertex AI Workbench** and the **Gemini 1.5 Flash model**.
 ---
 
-## What was doen
+## What was done
 
 This challenge was part of the **Google AI Prompt Engineering Techniques** training. 
 I worked through multiple practical tasks inside the Vertex AI Workbench using Python and text-based prompts.
 
 -> I can only read Python, not write in python
-for this lab it was suffiecinet the reading skill only.
+for this lab it was sufficient the reading skill only.
 
 ---
 
@@ -80,6 +80,11 @@ Tweaked prompt examples to always include bicycles in tour recommendations
 - **Model**: Gemini 1.5 Flash (`gemini-1.5-flash`)
 - **Language**: Python
 - **Environment**: Jupyter Notebook
+
+additional notes:
+> adding cell below the task prompt to keep the original runtime safe
+> saving work often; kernels don’t save after timeouts
+> if connection errors, use incognito browser to re-launch the lab
 
 ---
 
